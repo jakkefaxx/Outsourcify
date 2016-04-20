@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Outsourcify</string>
+
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="recommendedAction">Tack för din inrapportering, trafikledare hör av sig om det är nödvändigt.</string>
+    <string name="returnView">Återvänd till förstasidan</string>
+</resources>

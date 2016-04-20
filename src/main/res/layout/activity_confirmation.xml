@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.outsourcify.outsourcify.ConfirmationActivity"
+
+    android:background="@drawable/gradientbackground">
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="188dp"
+        android:id="@+id/visualConfirmationView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/recommendedAction"
+        android:id="@+id/recommendedActionView"
+        android:layout_below="@+id/visualConfirmationView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommendedActionView"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/returnView"
+        android:background="@drawable/standard_button"
+        android:onClick="initiateSkypeUri"/>
+
+    <ImageButton
+        android:id="@+id/call_skype"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/call_button"
+        android:onClick="initiateSkypeUri"/>
+
+
+    <Button
+        android:id="@+id/previous_activity"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_button"
+        android:onClick="previousActivity"
+        android:layout_toLeftOf="@+id/call_skype"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="120dp"/>
+
+    <Button
+        android:id="@+id/return_home"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/home_button"
+        android:onClick="returnHome"
+        android:layout_toLeftOf="@+id/previous_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="240dp"/>
+
+</RelativeLayout>
