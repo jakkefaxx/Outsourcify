@@ -24,6 +24,8 @@ public class TemplateActivity extends AppCompatActivity {
         ImageButton btn1 = (ImageButton)findViewById(R.id.call_skype);
         btn1.setOnClickListener(btnListener);
         ImageButton button2 = (ImageButton)findViewById(R.id.call_skype);
+        //lol!
+        ImageButton button3 = (ImageButton)findViewById(R.id.call_skype);
 
     }
 
